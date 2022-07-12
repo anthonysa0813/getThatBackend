@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "/books" => "books#index"
   post "/login" => "sessions#create"
-  post "/logout" => "sessions#destroy"
+  delete "/logout" => "sessions#destroy"
+  post "/signup" => "sessions#register"
 end
