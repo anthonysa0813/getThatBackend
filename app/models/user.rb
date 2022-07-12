@@ -1,8 +1,7 @@
 class User < ApplicationRecord
-  has_secure_password
   has_secure_token
-
+  has_secure_password
   def invalidate_token
-    self.update(token: nil)
+    update(token: nil)
   end
 end

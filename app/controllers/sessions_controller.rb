@@ -28,8 +28,8 @@ class SessionsController < ApplicationController
     head :ok
   end
 
-  private
-  def user_params
+  # private
+  # def user_params
     
-  end
+  # end
 end
