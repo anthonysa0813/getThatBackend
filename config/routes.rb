@@ -5,6 +5,17 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "/books" => "books#index"
   post "/login" => "sessions#create"
+
+  post "/seeker/login" => "seeker#create"
+  delete "/seeker/logout" => "seeker#destroy"
+  post "/seeker/signup" => "seeker#register"
+
+  post "/landlord/login" => "landlord#create"
+  delete "/landlord/logout" => "landlord#destroy"
+  post "/landlord/signup" => "landlord#register"
+
+  
+
   delete "/logout" => "sessions#destroy"
   post "/signup" => "sessions#register"
 end
