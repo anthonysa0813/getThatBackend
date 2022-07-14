@@ -6,7 +6,8 @@ class LandlordController < ApplicationController
     user = Landlord.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
       user.regenerate_token
-      render json: {token: user.token, name: user.name, email: user.email, type: user.type, phone: user.phone }
+      pp user
+      render json: {token: user.token,id: user.id, name: user.name, email: user.email, type: user.type, phone: user.phone }
     else
       render json: { unauthorized: "Incorrect email or password" }, status: :unauthorized
     end
