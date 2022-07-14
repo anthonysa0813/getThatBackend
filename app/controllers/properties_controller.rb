@@ -1,6 +1,9 @@
 class PropertiesController < ApplicationController
   def index
     @properties = Property.all
+    puts "============"
+    pp @property
+    puts "============"
     render json: @properties
   end
   
