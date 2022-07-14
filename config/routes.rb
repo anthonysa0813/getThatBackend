@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
@@ -14,6 +15,8 @@ Rails.application.routes.draw do
   delete "/landlord/logout" => "landlord#destroy"
   post "/landlord/signup" => "landlord#register"
 
+  #properties
+  post "/properties" => "posts#create"
   
 
   delete "/logout" => "sessions#destroy"
