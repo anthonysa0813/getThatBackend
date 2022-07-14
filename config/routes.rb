@@ -16,8 +16,10 @@ Rails.application.routes.draw do
   post "/landlord/signup" => "landlord#register"
 
   #properties
-  post "/properties" => "properties#create"
+  # post "/properties" => "properties#create"
   
+  post "/properties" => "properties#create"
+  get "/properties" => "properties#index"
 
   delete "/logout" => "sessions#destroy"
   post "/signup" => "sessions#register"

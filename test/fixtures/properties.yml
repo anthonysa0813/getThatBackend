@@ -1,6 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
   operation_type: MyString
   address: MyString
   montly_price: 1
@@ -28,4 +29,33 @@ two:
   description: MyText
   photo: MyString
   active: false
+=======
+  operation_type: false
+  address: MyString
+  montly_price: 1
+  maintance: 1
+  property_type: 1
+  bedrooms_count: 1
+  bathroom_count: 1
+  area: 1
+  pets_allowed: false
+  description: MyText
+  photo: MyString
+  active_published: false
+  user: one
+
+two:
+  operation_type: false
+  address: MyString
+  montly_price: 1
+  maintance: 1
+  property_type: 1
+  bedrooms_count: 1
+  bathroom_count: 1
+  area: 1
+  pets_allowed: false
+  description: MyText
+  photo: MyString
+  active_published: false
+>>>>>>> prueba
   user: two
