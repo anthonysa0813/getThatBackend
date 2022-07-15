@@ -1,11 +1,11 @@
 class CreateProperties < ActiveRecord::Migration[7.0]
   def change
     create_table :properties do |t|
-      t.boolean :operation_type
+      t.string :operation_type
       t.string :address
       t.integer :montly_price
       t.integer :maintance
-      t.integer :property_type
+      t.string :property_type
       t.integer :bedrooms_count
       t.integer :bathroom_count
       t.integer :area

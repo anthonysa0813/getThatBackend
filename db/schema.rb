@@ -79,11 +79,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_14_145442) do
   end
 
   create_table "properties", force: :cascade do |t|
-    t.boolean "operation_type"
+    t.string "operation_type"
     t.string "address"
     t.integer "montly_price"
     t.integer "maintance"
-    t.integer "property_type"
+    t.string "property_type"
     t.integer "bedrooms_count"
     t.integer "bathroom_count"
     t.integer "area"
