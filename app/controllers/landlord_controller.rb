@@ -13,6 +13,11 @@ class LandlordController < ApplicationController
     end
   end
 
+  def show
+    landlord = Landlord.find(params[:id])
+    render json: landlord
+  end
+
   def register
     user = Landlord.find_by(email: params[:email])
     if user

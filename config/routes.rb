@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   post "/landlord/login" => "landlord#create"
   delete "/landlord/logout" => "landlord#destroy"
   post "/landlord/signup" => "landlord#register"
+  get "/landlord/:id" => "landlord#show"
 
   #properties
   # post "/properties" => "properties#create"
